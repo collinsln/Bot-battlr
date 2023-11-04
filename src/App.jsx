@@ -6,6 +6,7 @@ import Bots from "./Bots";
 
 function App() {
 const[data,setData]=useState([])
+//const[avatar_url,setAvatar]=useState("")
 
 
   useEffect(()=>{
@@ -17,14 +18,20 @@ const[data,setData]=useState([])
 
 
 
+
+
   return (
     <div>
       <h1>Bots</h1>
       
         {data.map(bots=>(
-        <Bots name={bots.name} health={bots.health} damage={bots.damage} armor={bots.armor} bot_class={bots.bot_class}/>
+        <Bots key={bots.id} name={bots.name} avatar_url={bots.avatar_url}  health={bots.health} damage={bots.damage} armor={bots.armor} bot_class={bots.bot_class}/>
+       
         ))
+       
         } 
+        
+        
      
     </div>
   )
