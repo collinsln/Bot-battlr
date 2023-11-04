@@ -1,17 +1,22 @@
 import React from 'react'
-import pp from './assets/App.css'
+import { useState } from 'react'
+
 
 function Bots({name,health,damage,armor,bot_class,avatar_url,catchphrase,}) {
-  const clicked=()=>{console.log(name)}
   
+  const [clickedName, setClickedName] = useState('');
+  
+  const handleBotclick=()=>{setClickedName(name)}
+  const clearBot=()=>{setClickedName('')}
   
   return (
     <>
     
      <div className='container'>
       
-
-     <div className='botgrid' onClick={clicked}>
+<div>selected bot here:{clickedName}
+<button onClick={clearBot}></button>clear</div>
+     <div className='botgrid' onClick={handleBotclick}>
       <img src={avatar_url}/>
 
         <p>{name}</p>

@@ -7,7 +7,7 @@ import "./assets/App.css"
 
 function App() {
 const[data,setData]=useState([])
-const[selectedbot,setSelectedbot]=useState("")
+//const[selectedbot,setSelectedbot]=useState("")
 //const[avatar_url,setAvatar]=useState("")
 
 
