@@ -1,0 +1,16 @@
+.container{
+  max-width:fit-content;
+  margin:10px;
+  padding:10px;
+  background-color: antiquewhite;
+
+}
+
+.botgrid{
+  color: rgb(53, 50, 50);
+  background: rgb(209, 208, 208);
+  display: grid;
+  grid-template-columns:auto;
+  grid-auto-rows:auto;
+
+}
